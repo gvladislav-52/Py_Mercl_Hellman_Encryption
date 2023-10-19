@@ -45,7 +45,8 @@ class Merkle_Hellman:
         return self.r
 
     def setWord(self):
-        self.word = input()
+        import os
+        self.word = os.getenv("temp")
 
     def getWord(self):
         return self.word
